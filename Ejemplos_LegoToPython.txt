@@ -1,0 +1,116 @@
+ejemplos:
+
++|-|*|/|**:
+
+LEGO_INICIO
+{
+    a = 10;
+    b = 5;
+    suma = a QUITAR_BLOQUE b;
+    MOSTRAR_LEGO("Resultado:");
+    MOSTRAR_LEGO(suma);
+}
+LEGO_FIN
+
+
+ciclo for:
+
+LEGO_INICIO
+{
+    contador = 0;
+    REPETIR_LEGO(5) {
+        contador = contador AGREGAR_BLOQUE 1;
+        MOSTRAR_LEGO("Contador:");
+        MOSTRAR_LEGO(contador);
+    }
+}
+LEGO_FIN
+
+
+if-else:
+
+LEGO_INICIO
+{
+    x = 7;
+
+    SI (x MAS_PEQUE_QUE 10) {
+contador_externo = 0;
+    REPETIR_LEGO(2) {
+        MOSTRAR_LEGO("Inicio del bucle externo.");
+        contador_medio = 0;
+        REPETIR_LEGO(3) {
+            MOSTRAR_LEGO("Inicio del bucle medio.");
+            contador_interno = 0;
+            MIENTRAS_APILO(contador_interno MAS_PEQUE_QUE 4) {
+                MOSTRAR_LEGO("Bucle interno:");
+                MOSTRAR_LEGO("Externo:");
+                MOSTRAR_LEGO(contador_externo);
+                MOSTRAR_LEGO("Medio:");
+                MOSTRAR_LEGO(contador_medio);
+                MOSTRAR_LEGO("Interno:");
+                MOSTRAR_LEGO(contador_interno);
+                contador_interno = contador_interno AGREGAR_BLOQUE 1;
+            }
+            MOSTRAR_LEGO("Fin del bucle interno.");
+            contador_medio = contador_medio AGREGAR_BLOQUE 1;
+        }
+        MOSTRAR_LEGO("Fin del bucle medio.");
+        contador_externo = contador_externo AGREGAR_BLOQUE 1;
+    }
+    MOSTRAR_LEGO("Fin del bucle externo.");
+
+    } SINO {
+        MOSTRAR_LEGO("x no es menor que 10");
+    }
+
+    SI (x ESTE_BLOQUE_IGUAL_A 7) {
+        MOSTRAR_LEGO("x es igual a 7");
+    }
+}
+LEGO_FIN
+
+while:
+
+LEGO_INICIO {
+    contador = 0;
+    MIENTRAS_APILO (contador MAS_PEQUE_QUE 3) {
+        MOSTRAR_LEGO("Contador: ", contador);
+        contador = contador AGREGAR_BLOQUE 1;
+    }
+} LEGO_FIN
+
+otros ejemplos:
+
+
+LEGO_INICIO {
+    contador_externo = 0;
+    REPETIR_LEGO(2) {
+        MOSTRAR_LEGO("Inicio del bucle externo.");
+        contador_medio = 0;
+        REPETIR_LEGO(3) {
+            MOSTRAR_LEGO("Inicio del bucle medio.");
+            contador_interno = 0;
+            MIENTRAS_APILO(contador_interno MAS_PEQUE_QUE 4) {
+                MOSTRAR_LEGO("Bucle interno:");
+                MOSTRAR_LEGO("Externo:");
+                MOSTRAR_LEGO(contador_externo);
+                MOSTRAR_LEGO("Medio:");
+                MOSTRAR_LEGO(contador_medio);
+                MOSTRAR_LEGO("Interno:");
+                MOSTRAR_LEGO(contador_interno);
+                contador_interno = contador_interno AGREGAR_BLOQUE 1;
+            }
+            MOSTRAR_LEGO("Fin del bucle interno.");
+            contador_medio = contador_medio AGREGAR_BLOQUE 1;
+        }
+        MOSTRAR_LEGO("Fin del bucle medio.");
+        contador_externo = contador_externo AGREGAR_BLOQUE 1;
+    }
+    MOSTRAR_LEGO("Fin del bucle externo.");
+} LEGO_FIN
+
+
+
+
+
+
