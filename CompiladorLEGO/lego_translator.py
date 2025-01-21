@@ -4,7 +4,7 @@ from LEGOLexer import LEGOLexer
 from LegoToPython import LegoToPython
 
 def main():
-    input_file = "ejemplo.toycode"
+    input_file = "ejemplo.toycode -.---- debe jhalar"
     output_file = "output.py"
 
     try:
