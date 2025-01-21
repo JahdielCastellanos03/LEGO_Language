@@ -5,7 +5,7 @@ from LegoToPython import LegoToPython
 
 def main():
     input_file = "ejemplo.toycode -.---- debe jhalar"
-    output_file = "output.pyokokokokok"
+    output_file = "output.py"
 
     try:
         input_stream = FileStream(input_file, encoding="utf-8")
