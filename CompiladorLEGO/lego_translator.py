@@ -5,7 +5,7 @@ from LegoToPython import LegoToPython
 
 def main():
     input_file = "ejemplo.toycode -.---- debe jhalar"
-    output_file = "output.py"
+    output_file = "output.pyokokokokok"
 
     try:
         input_stream = FileStream(input_file, encoding="utf-8")
@@ -16,6 +16,8 @@ def main():
     lexer = LEGOLexer(input_stream)
     token_stream = CommonTokenStream(lexer)
     parser = LEGOParser(token_stream)
+
+
 
     try:
         tree = parser.programa()
